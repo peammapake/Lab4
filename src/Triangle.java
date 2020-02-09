@@ -11,8 +11,9 @@ import java.util.ArrayList;
  *   all triangles  
  *   Modified 24 August 2017 for Exercise 3, to make into a subclass
  *   of AbstractShape
-
  *
+ *  Modified by Bhimapaka Thapanangkun
+ *  ID: 60070503447
  */
 public class Triangle extends AbstractShape
 {
@@ -110,6 +111,10 @@ public class Triangle extends AbstractShape
     }
 
     @Override
+    /**
+     * Override the java.toString method to return triangle data informatively
+     * return String of triangle information
+     */
     public String toString()
     {
         Point A = vertices.get(0);

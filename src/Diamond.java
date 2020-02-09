@@ -6,6 +6,8 @@ import java.util.ArrayList;
  *
  *   Created 24 August 2017 for Exercise 3
  *
+ * Modified by Bhimapaka Thapanangkun
+ * ID: 60070503447
  */
 public class Diamond extends AbstractShape
 {
@@ -71,6 +73,10 @@ public class Diamond extends AbstractShape
     }
 
     @Override
+    /**
+     * Override the java.toString method to return circle data informatively
+     * return String of Diamond information
+     */
     public String toString()
     {
         return String.format("Diamond at x=" + anchor.x + " y="

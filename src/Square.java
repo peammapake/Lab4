@@ -11,6 +11,8 @@ import java.util.ArrayList;
  *   Modified 24 August 2017 for Exercise 3, to make into a subclass
  *   of AbstractShape
  *
+ * Modified by Bhimapaka Thapanangkun
+ * ID: 60070503447
  *
  */
 public class Square extends AbstractShape
@@ -63,6 +65,10 @@ public class Square extends AbstractShape
     }
 
     @Override
+    /**
+     * Override the java.toString method to return square data informatively
+     * return String of square information
+     */
     public String toString()
     {
         return String.format("Square at x=" + anchor.x + " y="

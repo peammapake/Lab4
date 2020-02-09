@@ -6,6 +6,9 @@ import java.util.ArrayList;
  *
  *   Created 26 Aug 2017 for Lecture 4
  *   Modified 9 Sept 2017 to fix draw method (wrong args)
+ *
+ *   Modified by Bhimapaka Thapanangkun
+ *   ID: 60070503447
  */
 public class Circle extends AbstractShape
 {
@@ -70,6 +73,10 @@ public class Circle extends AbstractShape
     }
 
     @Override
+    /**
+     * Override the java.toString method to return circle data informatively
+     * return String of circle information
+     */
     public String toString()
     {
         return String.format("Circle at x=" + anchor.x + " y=" + anchor.y + " with radius=" + radius);

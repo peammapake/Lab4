@@ -1,7 +1,17 @@
 import java.util.ArrayList;
 
+/**
+ * A class containing method to identify the read shapes
+ * and generate shape respectively from the given information
+ */
 public class ShapeReader extends TextFileReader
 {
+    /**
+     * Method to read through lines from text file
+     * and decided the shape that the given information belongs to
+     * then generate the respective shape instance
+     * @return AbstractShape depending on the type of shape as read
+     */
     public AbstractShape readShape()
     {
         ArrayList<Integer> list = new ArrayList<Integer>();
@@ -10,12 +20,11 @@ public class ShapeReader extends TextFileReader
         String lineRead = super.getNextLine();
         if(lineRead != null)
         {
+            /*Split the information into token seperate through the whitespace in between*/
             splitString = lineRead.split("\\s+");
         }
-        else
-        {
-            return null;
-        }
+        else return null;
+        /*Switch case depend on the shape type as identify on the first token*/
         switch(splitString[0])
         {
             case "SQUARE":

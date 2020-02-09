@@ -62,5 +62,10 @@ public class Square extends AbstractShape
         return (double) oneside * oneside;
     }
 
-	
+    @Override
+    public String toString()
+    {
+        return String.format("Square at x=" + anchor.x + " y="
+                + anchor.y + " with one side=" + oneside);
+    }
 }

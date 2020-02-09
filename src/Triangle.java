@@ -61,9 +61,9 @@ public class Triangle extends AbstractShape
         /* area formula is  
         |Ax(By - Cy) + Bx(Cy - Ay) + Cx(Ay - By)|/2
         */
-	Point A = vertices.get(0);
-	Point B = vertices.get(1);
-	Point C = vertices.get(2);
+        Point A = vertices.get(0);
+        Point B = vertices.get(1);
+        Point C = vertices.get(2);
         int numerator = A.x * (B.y - C.y);
         numerator += B.x * (C.y - A.y);
         numerator += C.x * (A.y - B.y);
@@ -107,6 +107,16 @@ public class Triangle extends AbstractShape
                                Math.pow(p1.y - p2.y,2)); 
 	   }
 	return len;
+    }
+
+    @Override
+    public String toString()
+    {
+        Point A = vertices.get(0);
+        Point B = vertices.get(1);
+        Point C = vertices.get(2);
+        return String.format("Triangle at x1=" + A.x + " y1="
+                + A.y + " x2=" + B.x + " y2=" + B.y + " x3=" + C.x + " y3=" + C.y);
     }
 
 }

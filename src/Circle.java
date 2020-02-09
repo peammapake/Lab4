@@ -68,4 +68,10 @@ public class Circle extends AbstractShape
        int labely = anchor.y - 5;
        graphics.drawString(new String(" " + shapeId),labelx,labely);
     }
+
+    @Override
+    public String toString()
+    {
+        return String.format("Circle at x=" + anchor.x + " y=" + anchor.y + " with radius=" + radius);
+    }
 }

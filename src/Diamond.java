@@ -70,6 +70,12 @@ public class Diamond extends AbstractShape
         return (double) (horizontalAxis * verticalAxis) / 2;
     }
 
+    @Override
+    public String toString()
+    {
+        return String.format("Diamond at x=" + anchor.x + " y="
+                + anchor.y + " with horizontal=" + horizontalAxis + " vertical=" + verticalAxis);
+    }
 
 
 }
